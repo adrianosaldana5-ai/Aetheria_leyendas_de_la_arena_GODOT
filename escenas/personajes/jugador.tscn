@@ -78,9 +78,10 @@ size = Vector2(117, 161)
 script = ExtResource("1_eon4k")
 
 [node name="SpritePersonaje" type="AnimatedSprite2D" parent="." unique_id=1999814114]
+position = Vector2(0, -151)
 sprite_frames = SubResource("SpriteFrames_maugy")
 animation = &"idle_abajo"
 
 [node name="ColisionJugador" type="CollisionShape2D" parent="." unique_id=590328396]
-position = Vector2(1.5, 63.500004)
+position = Vector2(0, 80.5)
 shape = SubResource("RectangleShape2D_f5l5t")
