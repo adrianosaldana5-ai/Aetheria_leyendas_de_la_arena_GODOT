@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bywouepb6klk5"]
+
+[ext_resource type="Texture2D" uid="uid://ccrverp5uq2d4" path="res://assets/imagenes/estructuras/zona_entrenamiento.png" id="1_8ghnh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_maugy"]
+size = Vector2(49, 75.75)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uylti"]
+radius = 28.0
+height = 210.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uylti"]
+size = Vector2(148.94968, 117.064095)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjlfa"]
+size = Vector2(34.35058, 98.919716)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b3jmh"]
+size = Vector2(66.76651, 96.73695)
+
+[node name="CampoEntrenamiento" type="StaticBody2D" unique_id=1970516335]
+
+[node name="SpriteCampo" type="Sprite2D" parent="." unique_id=131839036]
+position = Vector2(245, 157)
+texture = ExtResource("1_8ghnh")
+
+[node name="ColisionCampo" type="CollisionShape2D" parent="." unique_id=261028035]
+position = Vector2(147.5, 113.875)
+shape = SubResource("RectangleShape2D_maugy")
+
+[node name="ColisionCampo2" type="CollisionShape2D" parent="." unique_id=527838727]
+position = Vector2(126, 112)
+shape = SubResource("CapsuleShape2D_uylti")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1253319520]
+position = Vector2(343.50003, 154.50002)
+rotation = 0.3298672
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_uylti")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1359232484]
+position = Vector2(286.18103, 122.05093)
+rotation = 0.18849556
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_bjlfa")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=423488651]
+position = Vector2(406.00006, 178.00003)
+rotation = -0.37699112
+scale = Vector2(0.9999994, 0.9999994)
+shape = SubResource("RectangleShape2D_b3jmh")

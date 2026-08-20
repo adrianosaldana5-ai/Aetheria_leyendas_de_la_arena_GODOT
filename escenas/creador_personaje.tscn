@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://mhe4wgq0xq5y"]
+
+[ext_resource type="Script" uid="uid://bkp2iwvc10dok" path="res://escenas/creador_personaje.gd" id="1_yy2l1"]
+
+[node name="CreadorPersonaje" type="Node2D" unique_id=2122810471]
+script = ExtResource("1_yy2l1")
+
+[node name="VistaPrevia" type="Control" parent="." unique_id=1909105051]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 150.0
+offset_top = 150.0
+offset_right = 850.0
+offset_bottom = 930.0
+
+[node name="VistaPreviaPelo" type="TextureRect" parent="VistaPrevia" unique_id=1689679236]
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ControlesUI" type="VBoxContainer" parent="." unique_id=48701076]
+offset_left = 950.0
+offset_top = 180.0
+offset_right = 1700.0
+offset_bottom = 930.0
+theme_override_constants/separation = 20
+
+[node name="ContenedorNombre" type="HBoxContainer" parent="ControlesUI" unique_id=435374574]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ControlesUI/ContenedorNombre" unique_id=340985904]
+layout_mode = 2
+text = "Nombre:"
+
+[node name="CampoNombre" type="LineEdit" parent="ControlesUI/ContenedorNombre" unique_id=949477014]
+layout_mode = 2
+
+[node name="SelectorPiel" type="HBoxContainer" parent="ControlesUI" unique_id=1887321096]
+layout_mode = 2
+
+[node name="EtiquetaPiel" type="Label" parent="ControlesUI/SelectorPiel" unique_id=1143108894]
+layout_mode = 2
+text = "Tono de Piel"
+
+[node name="FlechaPielMenos" type="Button" parent="ControlesUI/SelectorPiel" unique_id=660726488]
+layout_mode = 2
+text = "<"
+
+[node name="FlechaPielMas" type="Button" parent="ControlesUI/SelectorPiel" unique_id=418470081]
+layout_mode = 2
+text = ">"
+
+[node name="SelectorColorPelo" type="HBoxContainer" parent="ControlesUI" unique_id=401325314]
+layout_mode = 2
+
+[node name="EtiquetaColorPelo" type="Label" parent="ControlesUI/SelectorColorPelo" unique_id=314435989]
+layout_mode = 2
+text = "Color de Pelo"
+
+[node name="FlechaColorPeloMenos" type="Button" parent="ControlesUI/SelectorColorPelo" unique_id=1829083605]
+layout_mode = 2
+text = "<"
+
+[node name="FlechaColorPeloMas" type="Button" parent="ControlesUI/SelectorColorPelo" unique_id=549274301]
+layout_mode = 2
+text = ">"
+
+[node name="SelectorEstiloBarba" type="HBoxContainer" parent="ControlesUI" unique_id=1511435076]
+layout_mode = 2
+
+[node name="EtiquetaEstiloBarba" type="Label" parent="ControlesUI/SelectorEstiloBarba" unique_id=1427687109]
+layout_mode = 2
+text = "Estilo de Barba"
+
+[node name="FlechaEstiloBarbaMenos" type="Button" parent="ControlesUI/SelectorEstiloBarba" unique_id=1286413987]
+layout_mode = 2
+text = "<"
+
+[node name="FlechaEstiloBarbaMas" type="Button" parent="ControlesUI/SelectorEstiloBarba" unique_id=194455866]
+layout_mode = 2
+text = ">"
+
+[node name="SelectorColorBarba" type="HBoxContainer" parent="ControlesUI" unique_id=700101848]
+layout_mode = 2
+
+[node name="EtiquetaColorBarba" type="Label" parent="ControlesUI/SelectorColorBarba" unique_id=587463231]
+layout_mode = 2
+text = "Color de Barba"
+
+[node name="FlechaColorBarbaMenos" type="Button" parent="ControlesUI/SelectorColorBarba" unique_id=1390757977]
+layout_mode = 2
+text = "<"
+
+[node name="FlechaColorBarbaMas" type="Button" parent="ControlesUI/SelectorColorBarba" unique_id=1827228477]
+layout_mode = 2
+text = ">"
+
+[node name="SelectorColorOjos" type="HBoxContainer" parent="ControlesUI" unique_id=1957082746]
+layout_mode = 2
+
+[node name="EtiquetaColorOjos" type="Label" parent="ControlesUI/SelectorColorOjos" unique_id=1239483160]
+layout_mode = 2
+text = "Color de Ojos"
+
+[node name="FlechaColorOjosMenos" type="Button" parent="ControlesUI/SelectorColorOjos" unique_id=826627648]
+layout_mode = 2
+text = "<"
+
+[node name="FlechaColorOjosMas" type="Button" parent="ControlesUI/SelectorColorOjos" unique_id=477466324]
+layout_mode = 2
+text = ">"
+
+[node name="BotonComenzar" type="Button" parent="ControlesUI" unique_id=1467625152]
+layout_mode = 2
+text = "Comenzar Aventura"
+
+[node name="CampoNombre" type="LineEdit" parent="ControlesUI" unique_id=730029400]
+layout_mode = 2
+placeholder_text = "Escribe tu nombre..."

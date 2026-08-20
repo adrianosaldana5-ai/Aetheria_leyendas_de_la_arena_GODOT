@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dv2j27tpdoaw6"]
+
+[ext_resource type="Script" uid="uid://ce4dt0gglljln" path="res://escenas/escena_carga.gd" id="1_0rwj3"]
+
+[node name="EscenaCarga" type="Control" unique_id=1632260793]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0rwj3")
+
+[node name="FondoCarga" type="ColorRect" parent="." unique_id=426302942]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101960786, 0.08235294, 0.1882353, 1)
+
+[node name="TextoCargando" type="Label" parent="." unique_id=623440740]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.0
+offset_top = -11.5
+offset_right = 44.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Cargando..."
+horizontal_alignment = 1
+
+[node name="BarraProgreso" type="ProgressBar" parent="." unique_id=1819750236]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -148.0
+offset_right = 2.0
+offset_bottom = -121.0
+grow_horizontal = 2
+grow_vertical = 0

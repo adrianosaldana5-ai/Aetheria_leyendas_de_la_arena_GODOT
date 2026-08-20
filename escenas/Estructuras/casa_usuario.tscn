@@ -1,0 +1,324 @@
+[gd_scene format=3 uid="uid://b0m5c00w1dx55"]
+
+[ext_resource type="Texture2D" uid="uid://7hl4dipq1pb" path="res://assets/imagenes/estructuras/casa_usuario.png" id="1_5pghm"]
+[ext_resource type="Texture2D" uid="uid://d2bpy4228fceu" path="res://assets/imagenes/estructuras/casa_usuario_ventana.png" id="2_7atlg"]
+[ext_resource type="Texture2D" uid="uid://dbq7g15y3jmld" path="res://assets/imagenes/estructuras/casa_usuario_humo_1.png" id="3_7atlg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_maugy"]
+size = Vector2(252, 185)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b3jmh"]
+size = Vector2(53, 87)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5l5t"]
+size = Vector2(160.09427, 49.998566)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_802k2"]
+size = Vector2(131.54651, 158.97964)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2clil"]
+size = Vector2(36, 42)
+
+[sub_resource type="Gradient" id="Gradient_ph04x"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_maugy"]
+gradient = SubResource("Gradient_ph04x")
+
+[sub_resource type="Animation" id="Animation_1csqx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteVentana/PointLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpriteVentana/PointLight2D2:energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SpriteVentana/PointLight2D3:energy")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SpriteVentana/PointLight2D4:energy")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_rny4n"]
+resource_name = "parpadeo_ventana"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpriteVentana/PointLight2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0066666603, 0.49, 0.5, 0.50666666, 1, 1.01, 1.0166667, 1.4933333, 1.5, 2, 2.0066667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 1.0, 0.5, 0.5, 0.5, 1.0, 1.0, 1.0, 0.6, 0.6, 1.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpriteVentana/PointLight2D2:energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.49, 0.5, 1, 1.01, 1.4933333, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 0.5, 0.5, 1.0, 1.0, 0.6, 0.6, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SpriteVentana/PointLight2D3:energy")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.49, 0.5, 1, 1.01, 1.4933333, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 0.5, 0.5, 1.0, 1.0, 0.6, 0.6, 1.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SpriteVentana/PointLight2D4:energy")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.49, 0.5, 1, 1.01, 1.4933333, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 0.5, 0.5, 1.0, 1.0, 0.6, 0.6, 1.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SpriteVentana2/PointLight2D5:energy")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.01, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 0.5, 1.0, 1.0, 0.6, 1.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SpriteVentana2/PointLight2D6:energy")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.01, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 0.5, 1.0, 1.0, 0.6, 1.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("SpriteVentana2/PointLight2D7:energy")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.01, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 0.5, 1.0, 1.0, 0.6, 1.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("SpriteVentana2/PointLight2D8:energy")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.01, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 0.5, 1.0, 1.0, 0.6, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_anogn"]
+_data = {
+&"RESET": SubResource("Animation_1csqx"),
+&"parpadeo_ventana": SubResource("Animation_rny4n")
+}
+
+[sub_resource type="Curve" id="Curve_f5l5t"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1e-05, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_bjlfa"]
+curve = SubResource("Curve_f5l5t")
+
+[sub_resource type="Gradient" id="Gradient_1csqx"]
+offsets = PackedFloat32Array(0.006818182, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_uylti"]
+gradient = SubResource("Gradient_1csqx")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_maugy"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(0, 1, 1)
+angle_min = -17.099989
+angle_max = 22.900011
+initial_velocity_min = 40.0
+initial_velocity_max = 70.0
+angular_velocity_min = -11.430016
+angular_velocity_max = 258.56998
+gravity = Vector3(0, 98, 0)
+scale_min = 0.79999995
+scale_max = 1.5
+color_ramp = SubResource("GradientTexture1D_uylti")
+alpha_curve = SubResource("CurveTexture_bjlfa")
+
+[node name="CasaUsuario" type="StaticBody2D" unique_id=1232304759]
+
+[node name="SpriteCasa" type="Sprite2D" parent="." unique_id=265328374]
+position = Vector2(194, 168)
+texture = ExtResource("1_5pghm")
+
+[node name="ColisionCasa" type="CollisionShape2D" parent="." unique_id=1659394647]
+position = Vector2(195, 211.5)
+shape = SubResource("RectangleShape2D_maugy")
+
+[node name="ColisionCasa2" type="CollisionShape2D" parent="." unique_id=1047822650]
+position = Vector2(83, 165)
+shape = SubResource("RectangleShape2D_b3jmh")
+
+[node name="ColisionCasa3" type="CollisionShape2D" parent="." unique_id=1475511404]
+position = Vector2(304, 161.5)
+shape = SubResource("RectangleShape2D_b3jmh")
+
+[node name="ColisionCasa4" type="CollisionShape2D" parent="." unique_id=1316473370]
+position = Vector2(145.1026, 93.69116)
+rotation = -0.65798914
+shape = SubResource("RectangleShape2D_f5l5t")
+
+[node name="ColisionCasa5" type="CollisionShape2D" parent="." unique_id=1015693849]
+position = Vector2(220.00002, 128.00002)
+rotation = -0.92851514
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_802k2")
+
+[node name="ColisionCasa6" type="CollisionShape2D" parent="." unique_id=1746794827]
+position = Vector2(269, 74)
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_2clil")
+
+[node name="SpriteVentana" type="Sprite2D" parent="." unique_id=96240702]
+modulate = Color(0.90752035, 0.81846595, 0.7465373, 1)
+position = Vector2(118.99999, 243.04181)
+scale = Vector2(0.8153846, 0.8561475)
+texture = ExtResource("2_7atlg")
+
+[node name="PointLight2D" type="PointLight2D" parent="SpriteVentana" unique_id=295738119]
+position = Vector2(-9.811312, 15.135458)
+scale = Vector2(0.089426145, 0.13383612)
+texture = SubResource("GradientTexture2D_maugy")
+texture_scale = 3.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="SpriteVentana" unique_id=1988704339]
+position = Vector2(-9.811309, -14.21106)
+scale = Vector2(0.08942616, 0.1353569)
+texture = SubResource("GradientTexture2D_maugy")
+texture_scale = 3.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="SpriteVentana" unique_id=1484163764]
+position = Vector2(12.264164, -14.065117)
+scale = Vector2(0.089426085, 0.1353569)
+texture = SubResource("GradientTexture2D_maugy")
+texture_scale = 3.0
+
+[node name="PointLight2D4" type="PointLight2D" parent="SpriteVentana" unique_id=945547100]
+position = Vector2(12.26416, 15.208469)
+scale = Vector2(0.09102302, 0.13459633)
+texture = SubResource("GradientTexture2D_maugy")
+texture_scale = 3.0
+
+[node name="SpriteVentana2" type="Sprite2D" parent="." unique_id=252756619]
+modulate = Color(0.90752035, 0.81846595, 0.7465373, 1)
+position = Vector2(266.0769, 241.80623)
+scale = Vector2(0.835, 0.8617564)
+texture = ExtResource("2_7atlg")
+
+[node name="PointLight2D5" type="PointLight2D" parent="SpriteVentana2" unique_id=1166044020]
+position = Vector2(-9.811312, 15.135458)
+scale = Vector2(0.089426145, 0.13383612)
+energy = 0.72811794
+texture = SubResource("GradientTexture2D_maugy")
+texture_scale = 3.0
+
+[node name="PointLight2D6" type="PointLight2D" parent="SpriteVentana2" unique_id=2049439738]
+position = Vector2(-9.811309, -14.21106)
+scale = Vector2(0.08942616, 0.1353569)
+energy = 0.72811794
+texture = SubResource("GradientTexture2D_maugy")
+texture_scale = 3.0
+
+[node name="PointLight2D7" type="PointLight2D" parent="SpriteVentana2" unique_id=614981363]
+position = Vector2(12.264164, -14.065117)
+scale = Vector2(0.089426085, 0.1353569)
+energy = 0.72811794
+texture = SubResource("GradientTexture2D_maugy")
+texture_scale = 3.0
+
+[node name="PointLight2D8" type="PointLight2D" parent="SpriteVentana2" unique_id=1866948950]
+position = Vector2(12.26416, 15.208469)
+scale = Vector2(0.09102302, 0.13459633)
+energy = 0.72811794
+texture = SubResource("GradientTexture2D_maugy")
+texture_scale = 3.0
+
+[node name="AnimadorLuz" type="AnimationPlayer" parent="." unique_id=1298224692]
+libraries/ = SubResource("AnimationLibrary_anogn")
+
+[node name="HumoChimenea" type="GPUParticles2D" parent="." unique_id=1374347139]
+z_index = 10
+position = Vector2(269, 59)
+rotation = -1.2077678
+scale = Vector2(2.12, 2.12)
+emitting = false
+amount = 6
+texture = ExtResource("3_7atlg")
+process_material = SubResource("ParticleProcessMaterial_maugy")

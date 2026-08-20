@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://devq6bor63pft"]
+
+[ext_resource type="Script" uid="uid://2pq2ajlbh1x6" path="res://escenas/personajes/jugador.gd" id="1_eon4k"]
+[ext_resource type="Texture2D" uid="uid://q75oonsbrgkk" path="res://assets/imagenes/personaje/personaje_abajo_camina_1.png" id="1_hxkam"]
+[ext_resource type="Texture2D" uid="uid://15fsb0aq2cwk" path="res://assets/imagenes/personaje/personaje_abajo_camina_2.png" id="2_eon4k"]
+[ext_resource type="Texture2D" uid="uid://bqtw1o2h4160w" path="res://assets/imagenes/personaje/personaje_arriba_camina_1.png" id="3_fgb6u"]
+[ext_resource type="Texture2D" uid="uid://b4d0g4g4yf8t6" path="res://assets/imagenes/personaje/personaje_arriba_camina_2.png" id="4_kjgos"]
+[ext_resource type="Texture2D" uid="uid://bpxvoqahkfdsq" path="res://assets/imagenes/personaje/personaje_izquierda_camina_1.png" id="5_ktpwu"]
+[ext_resource type="Texture2D" uid="uid://buj1ow03jb3jj" path="res://assets/imagenes/personaje/personaje_izquierda_camina_2.png" id="6_662ai"]
+[ext_resource type="Texture2D" uid="uid://vu1sgfm8t870" path="res://assets/imagenes/personaje/personaje_abajo_idle.png" id="7_7we22"]
+[ext_resource type="Texture2D" uid="uid://dmuoam2nlcbvo" path="res://assets/imagenes/personaje/personaje_arriba_idle.png" id="8_x0ky1"]
+[ext_resource type="Texture2D" uid="uid://dh8csrmb81d4c" path="res://assets/imagenes/personaje/personaje_izquierda_idle.png" id="9_mv1ta"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_maugy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hxkam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_eon4k")
+}],
+"loop": 1,
+"name": &"caminar_abajo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_fgb6u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kjgos")
+}],
+"loop": 1,
+"name": &"caminar_arriba",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ktpwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_662ai")
+}],
+"loop": 1,
+"name": &"caminar_izquierda",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_7we22")
+}],
+"loop": 1,
+"name": &"idle_abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_x0ky1")
+}],
+"loop": 1,
+"name": &"idle_arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_mv1ta")
+}],
+"loop": 1,
+"name": &"idle_izquierda",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5l5t"]
+size = Vector2(117, 161)
+
+[node name="Jugador" type="CharacterBody2D" unique_id=81749070]
+script = ExtResource("1_eon4k")
+
+[node name="SpritePersonaje" type="AnimatedSprite2D" parent="." unique_id=1999814114]
+sprite_frames = SubResource("SpriteFrames_maugy")
+animation = &"idle_abajo"
+
+[node name="ColisionJugador" type="CollisionShape2D" parent="." unique_id=590328396]
+position = Vector2(1.5, 63.500004)
+shape = SubResource("RectangleShape2D_f5l5t")
