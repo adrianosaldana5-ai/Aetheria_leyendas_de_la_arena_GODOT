@@ -54,33 +54,40 @@ radius = 8.760559
 height = 25.39386
 
 [node name="Arbol" type="Node2D" unique_id=196739132]
+y_sort_enabled = true
 
 [node name="Arbol" type="StaticBody2D" parent="." unique_id=1779689444]
 
 [node name="SpriteTronco" type="Sprite2D" parent="Arbol" unique_id=1267722056]
-position = Vector2(178, 89)
+z_index = 0
+position = Vector2(0, 58)
 texture = ExtResource("1_w77qx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Arbol" unique_id=1338180566]
-position = Vector2(178, 95)
+z_index = 0
+position = Vector2(0, 64)
 shape = SubResource("CapsuleShape2D_maugy")
 
 [node name="SpriteCopa" type="Sprite2D" parent="Arbol" unique_id=1678114918]
-position = Vector2(178.00002, 56.000004)
+z_index = 1
+position = Vector2(0.00002, 25.000004)
 scale = Vector2(0.70804787, 0.62746465)
 texture = ExtResource("2_w77qx")
 offset = Vector2(0, -64)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Arbol" unique_id=922676583]
+z_index = 0
 libraries/ = SubResource("AnimationLibrary_pgdq5")
 autoplay = &"viento"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Arbol" unique_id=1378626220]
-position = Vector2(152, 130.00002)
+z_index = 0
+position = Vector2(-26, 99.00002)
 rotation = 0.8552113
 shape = SubResource("CapsuleShape2D_uylti")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Arbol" unique_id=2012260516]
-position = Vector2(204.99998, 130)
+z_index = 0
+position = Vector2(26.99998, 99)
 rotation = -0.8552113
 shape = SubResource("CapsuleShape2D_bjlfa")

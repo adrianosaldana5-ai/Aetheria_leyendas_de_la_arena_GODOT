@@ -87,70 +87,87 @@ size = Vector2(62, 55)
 size = Vector2(188.5, 32.429688)
 
 [node name="Coliseo" type="StaticBody2D" unique_id=800392943]
+y_sort_enabled = true
 
 [node name="SpriteColiseo" type="Sprite2D" parent="." unique_id=284199544]
-position = Vector2(370, 313)
+z_index = 0
+position = Vector2(0, -222)
 texture = ExtResource("1_7siru")
 
 [node name="SpriteBandera" type="Sprite2D" parent="." unique_id=1896252818]
-position = Vector2(370.00003, 58.000004)
+z_index = 1
+position = Vector2(0, -255)
 rotation = -1.5707964
 scale = Vector2(0.56305534, 0.51257455)
 texture = ExtResource("2_evjke")
 offset = Vector2(0, 147.805)
 
 [node name="ColisionColiseo" type="CollisionShape2D" parent="." unique_id=951232882]
-position = Vector2(313, 303.5703)
+z_index = 0
+position = Vector2(-57, -9)
 shape = SubResource("RectangleShape2D_7siru")
 
 [node name="ColisionColiseo2" type="CollisionShape2D" parent="." unique_id=1615423138]
-position = Vector2(429, 302)
+z_index = 0
+position = Vector2(59, -11)
 shape = SubResource("RectangleShape2D_7siru")
 
 [node name="AnimadorBandera" type="AnimationPlayer" parent="." unique_id=430080974]
+z_index = 0
 libraries/ = SubResource("AnimationLibrary_eqiuc")
 autoplay = &"viento_bandera"
 
 [node name="ColisionColiseo3" type="CollisionShape2D" parent="." unique_id=786085430]
-position = Vector2(249, 344.25)
+z_index = 0
+position = Vector2(-121, 31)
 shape = SubResource("RectangleShape2D_evjke")
 
 [node name="ColisionColiseo4" type="CollisionShape2D" parent="." unique_id=1152800888]
-position = Vector2(211, 350.5)
+z_index = 0
+position = Vector2(-159, 37)
 shape = SubResource("RectangleShape2D_4v4as")
 
 [node name="ColisionColiseo5" type="CollisionShape2D" parent="." unique_id=1827954316]
-position = Vector2(168.75, 365)
+z_index = 0
+position = Vector2(-201.25, 52)
 shape = SubResource("RectangleShape2D_nqh6o")
 
 [node name="ColisionColiseo6" type="CollisionShape2D" parent="." unique_id=2058400886]
-position = Vector2(167, 420.25)
+z_index = 0
+position = Vector2(-203, 107)
 shape = SubResource("RectangleShape2D_eqiuc")
 
 [node name="ColisionColiseo7" type="CollisionShape2D" parent="." unique_id=469348034]
-position = Vector2(491, 345)
+z_index = 0
+position = Vector2(121, 32)
 shape = SubResource("RectangleShape2D_evjke")
 
 [node name="ColisionColiseo8" type="CollisionShape2D" parent="." unique_id=245573320]
-position = Vector2(530, 351)
+z_index = 0
+position = Vector2(160, 38)
 shape = SubResource("RectangleShape2D_4v4as")
 
 [node name="ColisionColiseo9" type="CollisionShape2D" parent="." unique_id=592158950]
-position = Vector2(572, 366)
+z_index = 0
+position = Vector2(202, 53)
 shape = SubResource("RectangleShape2D_nqh6o")
 
 [node name="ColisionColiseo10" type="CollisionShape2D" parent="." unique_id=2090685891]
-position = Vector2(575, 421)
+z_index = 0
+position = Vector2(205, 108)
 shape = SubResource("RectangleShape2D_eqiuc")
 
 [node name="ColisionColiseo11" type="CollisionShape2D" parent="." unique_id=1235181552]
-position = Vector2(245, 457.5)
+z_index = 0
+position = Vector2(-125, 144)
 shape = SubResource("RectangleShape2D_il5tc")
 
 [node name="ColisionColiseo12" type="CollisionShape2D" parent="." unique_id=1179676714]
-position = Vector2(370.75, 493)
+z_index = 0
+position = Vector2(0.75, 180)
 shape = SubResource("RectangleShape2D_dkdsk")
 
 [node name="ColisionColiseo14" type="CollisionShape2D" parent="." unique_id=1905050033]
-position = Vector2(496, 457)
+z_index = 0
+position = Vector2(126, 144)
 shape = SubResource("RectangleShape2D_il5tc")
