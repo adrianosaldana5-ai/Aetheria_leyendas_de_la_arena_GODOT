@@ -1,9 +1,33 @@
 ```
 # Godot-specific ignores
 *.import
-*.uid
+*.remap
 .project
 .user
 .godot/
+
+# Build artifacts
 export_presets.cfg
+
+# Dependencies and build directories
+.build/
+dist/
+build/
+target/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+*.env.*
 ```

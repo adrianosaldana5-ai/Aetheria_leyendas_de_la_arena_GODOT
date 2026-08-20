@@ -213,76 +213,91 @@ color_ramp = SubResource("GradientTexture1D_uylti")
 alpha_curve = SubResource("CurveTexture_bjlfa")
 
 [node name="CasaUsuario" type="StaticBody2D" unique_id=1232304759]
+y_sort_enabled = true
 
 [node name="SpriteCasa" type="Sprite2D" parent="." unique_id=265328374]
+z_index = 0
 position = Vector2(0, -108)
 texture = ExtResource("1_5pghm")
 
 [node name="ColisionCasa" type="CollisionShape2D" parent="." unique_id=1659394647]
+z_index = 0
 position = Vector2(1, 26.5)
 shape = SubResource("RectangleShape2D_maugy")
 
 [node name="ColisionCasa2" type="CollisionShape2D" parent="." unique_id=1047822650]
+z_index = 0
 position = Vector2(-111, -20)
 shape = SubResource("RectangleShape2D_b3jmh")
 
 [node name="ColisionCasa3" type="CollisionShape2D" parent="." unique_id=1475511404]
+z_index = 0
 position = Vector2(110, -23.5)
 shape = SubResource("RectangleShape2D_b3jmh")
 
 [node name="ColisionCasa4" type="CollisionShape2D" parent="." unique_id=1316473370]
+z_index = 0
 position = Vector2(-48.8974, -91.30884)
 rotation = -0.65798914
 shape = SubResource("RectangleShape2D_f5l5t")
 
 [node name="ColisionCasa5" type="CollisionShape2D" parent="." unique_id=1015693849]
+z_index = 0
 position = Vector2(26.00002, -56.99998)
 rotation = -0.92851514
 scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_802k2")
 
 [node name="ColisionCasa6" type="CollisionShape2D" parent="." unique_id=1746794827]
+z_index = 0
 position = Vector2(75, -111)
 scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_2clil")
 
 [node name="SpriteVentana" type="Sprite2D" parent="." unique_id=96240702]
+z_index = 1
 modulate = Color(0.90752035, 0.81846595, 0.7465373, 1)
 position = Vector2(-75, 58.04181)
 scale = Vector2(0.8153846, 0.8561475)
 texture = ExtResource("2_7atlg")
 
 [node name="PointLight2D" type="PointLight2D" parent="SpriteVentana" unique_id=295738119]
+z_index = 2
 position = Vector2(0, 0)
 scale = Vector2(0.089426145, 0.13383612)
 texture = SubResource("GradientTexture2D_maugy")
 texture_scale = 3.0
 
 [node name="PointLight2D2" type="PointLight2D" parent="SpriteVentana" unique_id=1988704339]
+z_index = 2
 position = Vector2(0, 0)
 scale = Vector2(0.08942616, 0.1353569)
 texture = SubResource("GradientTexture2D_maugy")
 texture_scale = 3.0
 
 [node name="PointLight2D3" type="PointLight2D" parent="SpriteVentana" unique_id=1484163764]
+z_index = 2
 position = Vector2(0, 0)
 scale = Vector2(0.089426085, 0.1353569)
 texture = SubResource("GradientTexture2D_maugy")
 texture_scale = 3.0
 
 [node name="PointLight2D4" type="PointLight2D" parent="SpriteVentana" unique_id=945547100]
+z_index = 2
 position = Vector2(0, 0)
 scale = Vector2(0.09102302, 0.13459633)
 texture = SubResource("GradientTexture2D_maugy")
 texture_scale = 3.0
 
 [node name="SpriteVentana2" type="Sprite2D" parent="." unique_id=252756619]
+z_index = 1
 modulate = Color(0.90752035, 0.81846595, 0.7465373, 1)
 position = Vector2(72.0769, 56.80623)
 scale = Vector2(0.835, 0.8617564)
 texture = ExtResource("2_7atlg")
 
 [node name="PointLight2D5" type="PointLight2D" parent="SpriteVentana2" unique_id=1166044020]
+z_index = 2
 position = Vector2(0, 0)
 scale = Vector2(0.089426145, 0.13383612)
 energy = 0.72811794
@@ -290,6 +305,7 @@ texture = SubResource("GradientTexture2D_maugy")
 texture_scale = 3.0
 
 [node name="PointLight2D6" type="PointLight2D" parent="SpriteVentana2" unique_id=2049439738]
+z_index = 2
 position = Vector2(0, 0)
 scale = Vector2(0.08942616, 0.1353569)
 energy = 0.72811794
@@ -297,6 +313,7 @@ texture = SubResource("GradientTexture2D_maugy")
 texture_scale = 3.0
 
 [node name="PointLight2D7" type="PointLight2D" parent="SpriteVentana2" unique_id=614981363]
+z_index = 2
 position = Vector2(0, 0)
 scale = Vector2(0.089426085, 0.1353569)
 energy = 0.72811794
@@ -304,6 +321,7 @@ texture = SubResource("GradientTexture2D_maugy")
 texture_scale = 3.0
 
 [node name="PointLight2D8" type="PointLight2D" parent="SpriteVentana2" unique_id=1866948950]
+z_index = 2
 position = Vector2(0, 0)
 scale = Vector2(0.09102302, 0.13459633)
 energy = 0.72811794
@@ -311,10 +329,11 @@ texture = SubResource("GradientTexture2D_maugy")
 texture_scale = 3.0
 
 [node name="AnimadorLuz" type="AnimationPlayer" parent="." unique_id=1298224692]
+z_index = 0
 libraries/ = SubResource("AnimationLibrary_anogn")
 
 [node name="HumoChimenea" type="GPUParticles2D" parent="." unique_id=1374347139]
-z_index = 10
+z_index = 3
 position = Vector2(75, -126)
 rotation = -1.2077678
 scale = Vector2(2.12, 2.12)
